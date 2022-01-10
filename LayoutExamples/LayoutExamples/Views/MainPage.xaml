@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutExamples.Views.MainPage"
+             xmlns:views="using:LayoutExamples.Views"
+            Title="Layout Examples">
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableView.Root>
+                <TableSection Title="Select an example">
+                    <TextCell Text = "StackLayout Horizontal" Tapped="navigateToPage" CommandParameter="{x:Type views:StackLayoutHorizontal}" />
+                    <TextCell Text = "StackLayout Vertical" Tapped="navigateToPage" CommandParameter="{x:Type views:StackLayoutVertical}" />
+                    <TextCell Text = "RelativeLayout" Tapped="navigateToPage" CommandParameter="{x:Type views:RelativeLayoutExample}" />
+                    <TextCell Text = "AbsoluteLayout" Tapped="navigateToPage" CommandParameter="{x:Type views:AbsoluteLayoutExample}" />
+                    <TextCell Text = "Grid" Tapped="navigateToPage" CommandParameter="{x:Type views:GridExample1}" />
+                    <TextCell Text = "Grid Using GridUnitType.Absolute" Tapped="navigateToPage" CommandParameter="{x:Type views:GridExample2}" />
+                    <TextCell Text = "Grid using GridUnitType.Star" Tapped="navigateToPage" CommandParameter="{x:Type views:GridExample3}" />
+                    <TextCell Text = "FlexLayout" Tapped="navigateToPage" CommandParameter="{x:Type views:FlexLayoutExample}" />
+                    <TextCell Text = "ContentView" Tapped="navigateToPage" CommandParameter="{x:Type views:ContentViewExample}" />
+                    <TextCell Text = "Frame" Tapped="navigateToPage" CommandParameter="{x:Type views:FrameExample}" />
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
